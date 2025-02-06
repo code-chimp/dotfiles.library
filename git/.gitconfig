@@ -1,0 +1,24 @@
+[user]
+    email = tim@code-chimp.com
+    name = Tim Goshinski
+[core]
+    autocrlf = input
+    editor = vim
+[alias]
+    cm   = !git add -A && git commit -m
+    co   = checkout
+    cob  = checkout -b
+    cot  = checkout --track
+    dump = cat-file -p
+    ec   = config --global -e
+    hist = log --graph --full-history --all --pretty=format:'%C(yellow bold)%h%Creset -%C(green bold)%d%Creset %s %C(green)(%cr) %C(bold cyan)<%an>%Creset'
+    save = !git add -A && git commit -m 'SAVEPOINT'
+    st   = status
+    type = cat-file -t
+    wip  = !git add -A && git commit -m 'WIP'
+[color]
+    ui = auto
+[rerere]
+    enabled = true
+[init]
+    defaultBranch = main

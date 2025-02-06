@@ -1,0 +1,35 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{c,cpp,hs,java,kt}]
+indent_size = 4
+
+[*.{cs,sln}]
+dotnet_sort_system_directories_first = true
+dotnet_separate_import_directive_groups = false
+indent_size = 4
+
+[*.go]
+indent_size = 4
+indent_style = tab
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.py]
+indent_size = 4
+insert_final_newline=false
+
+[*.rs]
+end_of_line = lf
+indent_size = 4
+
+[Makefile]
+indent_style = tab
