@@ -6,7 +6,7 @@ dry="0"
 home_content_dirs="fonts,git,npm,tmux,vim,zsh"
 
 # FZF Fix
-fzf_version=$(fzf --version | awk '{print $1}' | cut -d. -f1)
+fzf_version=$(fzf --version | awk '{print $1}' | cut -d. -f2)
 if [ $fzf_version -lt 48 ]; then
     home_content_dirs="$home_content_dirs,fzf"
 fi
