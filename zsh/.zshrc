@@ -28,40 +28,41 @@ autoload -Uz compinit && compinit -i
 export DOCKER_BUILDKIT=1
 export COMPOSE_DOCKER_CLI_BUILD=1
 
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/local/bin:/usr/local/bin:$PATH
+export PATH="$HOME/bin:$HOME/.local/bin:$HOME/local/bin:/usr/local/bin:$PATH"
 
 # GOOGLE LOVE
-export GOROOT=/usr/local/go
-export GOARCH=amd64
-export GOOS=linux
-export PATH=$GOROOT/bin:$PATH
+export GOROOT="/usr/local/go"
+export GOARCH="amd64"
+export GOOS="linux"
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
 
 #  Android
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+export ANDROID_HOME="$HOME/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/tools"
+export PATH="$PATH:$ANDROID_HOME/tools/bin"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
 # Flutter 2
-export PATH=$PATH:$HOME/flutter/bin
+export PATH="$PATH:$HOME/flutter/bin"
 
 # .NET Core
-export PATH=$HOME/.dotnet/tools:$PATH
+export PATH="$HOME/.dotnet/tools:$PATH"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Deno - https://deno.land
-export DENO_DIR=$HOME/.cache/deno
-export DENO_INSTALL=$HOME/.deno
-export PATH=$DENO_INSTALL/bin:$PATH
+export DENO_DIR="$HOME/.cache/deno"
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 # Volta
 export VOLTA_FEATURE_PNPM=1
-export VOLTA_HOME=$HOME/.volta
-export PATH=$VOLTA_HOME/bin:$PATH
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Open system browser from WSL
 # export BROWSER=wslview
